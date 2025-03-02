@@ -20,4 +20,4 @@ jobs:
 
       - name: Connect to DB
         run: |
-          ${SQLCL_HOME}/bin/sql app_user/app_user_password@localhost:1521/FREEPDB1
+          echo "select * from v\$version;" | ${SQLCL_HOME}/bin/sql app_user/app_user_password@localhost:1521/FREEPDB1
